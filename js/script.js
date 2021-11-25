@@ -80,9 +80,23 @@ const newStudent = {
     età: newAge
 
 };
-
+//stampo il nuovo oggetto (studente) e lo pusho nell'array (classe)
 console.log(newStudent);
-
 studentsClassOne.push(newStudent);
 
+//verifico che sia presente nell'array
 console.log(studentsClassOne);
+
+//stampo in console nome, cognome, età di tutti gli oggetti
+//(studenti) presenti nell'array
+for (i = 0; i < studentsClassOne.length; i++) {
+
+    const thisStudent = studentsClassOne[i];
+    console.log(thisStudent);
+
+    for ( let key in thisStudent) {
+        
+        console.log(thisStudent[key]);
+        
+    }
+}
