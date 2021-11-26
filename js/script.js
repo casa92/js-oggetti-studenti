@@ -12,7 +12,7 @@ const studenteProva = {
 
     nome: 'Federico',
     cognome: 'Casartelli',
-    età: 29
+    eta: 29
 
 }
 
@@ -33,19 +33,19 @@ const studentsClassOne =
     {
         nome: 'Leonardo',
         cognome: 'Marelli',
-        età: 20
+        eta: 20
     },
 
     {
         nome: 'Francesco',
         cognome: 'Bianchi',
-        età: 38
+        eta: 38
     },
 
     {
         nome: 'Mattia',
         cognome: 'Covelli',
-        età: 55
+        eta: 55
     }
 
 ];
@@ -57,12 +57,14 @@ for (i = 0; i < studentsClassOne.length; i++) {
     const thisStudent = studentsClassOne[i];
     console.log(thisStudent);
 
-    for ( let key in thisStudent) {
+    // for ( let key in thisStudent) {
         
-        if ( key !== 'età') {
-            console.log(thisStudent[key]);
-        }
-    }
+    //     if ( key !== 'eta') {
+    //         console.log(thisStudent[key]);
+    //     }
+    // }
+
+    console.log( thisStudent.nome + ' ' + thisStudent.cognome );
 }
 
 //CREO TRE PROMPT PER PERMETTERE ALL'UTENTE DI PUSHARE UN OGGETTO NEL MIO ARRAY
@@ -77,7 +79,7 @@ const newStudent = {
 
     nome: newName,
     cognome: newLastname,
-    età: newAge
+    eta: newAge
 
 };
 //stampo il nuovo oggetto (studente) e lo pusho nell'array (classe)
